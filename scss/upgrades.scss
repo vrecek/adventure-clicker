@@ -1,0 +1,72 @@
+.upg-item{
+   width:100%;
+   height:150px;
+   margin-bottom:2em;
+   border: 2px solid rgb(0, 68, 255);
+   border-radius: .2em;
+   background: rgba($color: #000000, $alpha: .8);
+   cursor: pointer;
+   color:white;
+
+   h5{
+      text-align: center;
+      margin:.2em 0 1em 0;
+      font-size: 1rem;
+   }
+
+   .it-cont{
+      height:calc(100% - 39px);
+      display: flex;
+      justify-content: space-between;
+
+      div{
+         &:nth-child(1){
+            width:35%;
+   
+            img{
+               width:100%;
+               height:100%;
+               border:1px solid blue; border-width: 1px 1px 0 0;
+            }
+         }
+
+         &:nth-child(2){
+            width:65%;
+            position: relative;
+
+            p{
+               font-size: .8rem;
+               padding:0 .2em;
+            
+               &.desc{
+                  margin: .2em 0;
+                  color:red;
+                  font-weight: 400;      
+               }
+            }
+
+            .num-info{
+               position: absolute;
+               bottom:0;
+               width: 100%;
+               border-top: 1px solid blue;
+               padding:.1em .2em;
+
+               h6{         
+                  &.owned{
+                     font-size: .7rem; 
+                  }
+   
+                  &.cost{ 
+                     font-size: .8rem;      
+                     
+                     span{
+                        color:rgb(9, 247, 9);
+                     }
+                  }
+               }
+            }            
+         }
+      }
+   }
+}

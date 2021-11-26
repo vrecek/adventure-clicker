@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  background: url("https://images3.alphacoders.com/152/thumb-1920-152779.jpg");
+  background-size: 100% 100%;
+  font-family: 'Sora', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  height: 15%;
+  width: 100%;
+}
+
+body header h1 {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 1px white;
+  width: 40%;
+  border-bottom: 3px solid black;
+}
+
+body main {
+  height: 65%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5em;
+}
+
+body main section {
+  height: 100%;
+}
+
+body main section.click-cont {
+  width: 33%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.click-cont img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-user-drag: none;
+}
+
+body main section.click-cont div.inf-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid saddlebrown;
+  border-radius: .3em;
+  padding: .5em 0;
+}
+
+body main section.click-cont div.inf-cont .cash-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.click-cont div.inf-cont .cash-cont h3 {
+  width: 50%;
+  font-size: 1.5rem;
+  margin-bottom: .2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body main section.click-cont div.inf-cont .cash-cont h3:nth-child(1) {
+  text-align: right;
+}
+
+body main section.click-cont div.inf-cont .cash-cont h3:nth-child(2) {
+  text-align: left;
+  color: green;
+}
+
+body main section.click-cont div.inf-cont section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.click-cont div.inf-cont section div {
+  width: 50%;
+}
+
+body main section.click-cont div.inf-cont section div h4 {
+  text-align: center;
+}
+
+body main section.click-cont div.inf-cont section div h4:nth-child(2) {
+  font-weight: 600;
+}
+
+body main section.upg-cont {
+  width: 25%;
+  border: 3px solid saddlebrown;
+  border-radius: .2em;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body main section.upg-cont h2 {
+  padding-top: .5em;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 0 0 4px white;
+}
+
+body main section.upg-cont section {
+  height: calc(100% - 45.4px);
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+body footer {
+  height: 18%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1.5em 2em;
+  border-top: 2px solid black;
+  -webkit-box-shadow: 0 0 2px green, 0 0 4px green, 0 0 8px green;
+          box-shadow: 0 0 2px green, 0 0 4px green, 0 0 8px green;
+  -webkit-animation: glow 5s linear infinite;
+          animation: glow 5s linear infinite;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}

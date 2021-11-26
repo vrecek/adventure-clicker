@@ -1,0 +1,73 @@
+.upg-item {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2em;
+  border: 2px solid #0044ff;
+  border-radius: .2em;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  color: white;
+}
+
+.upg-item h5 {
+  text-align: center;
+  margin: .2em 0 1em 0;
+  font-size: 1rem;
+}
+
+.upg-item .it-cont {
+  height: calc(100% - 39px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upg-item .it-cont div:nth-child(1) {
+  width: 35%;
+}
+
+.upg-item .it-cont div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  border-width: 1px 1px 0 0;
+}
+
+.upg-item .it-cont div:nth-child(2) {
+  width: 65%;
+  position: relative;
+}
+
+.upg-item .it-cont div:nth-child(2) p {
+  font-size: .8rem;
+  padding: 0 .2em;
+}
+
+.upg-item .it-cont div:nth-child(2) p.desc {
+  margin: .2em 0;
+  color: red;
+  font-weight: 400;
+}
+
+.upg-item .it-cont div:nth-child(2) .num-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid blue;
+  padding: .1em .2em;
+}
+
+.upg-item .it-cont div:nth-child(2) .num-info h6.owned {
+  font-size: .7rem;
+}
+
+.upg-item .it-cont div:nth-child(2) .num-info h6.cost {
+  font-size: .8rem;
+}
+
+.upg-item .it-cont div:nth-child(2) .num-info h6.cost span {
+  color: #09f709;
+}
