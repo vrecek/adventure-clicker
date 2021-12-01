@@ -1,6 +1,6 @@
-import Statistics from './Statistics.js';
-import { BasicUpg, CdAndCps } from './Upgrades.js';
-import { Chest } from './Boost.js';
+import Statistics from '/js/Statistics.js';
+import { BasicUpg, CdAndCps } from '/js/Upgrades.js';
+import { Chest } from '/js/Boost.js';
 const maxWidth = 1200 - 1;
 const maxHeight = 602 - 1;
 if (window.innerWidth <= maxWidth || window.innerHeight <= maxHeight) {
