@@ -6,18 +6,23 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/bottomItem.css">
    <link rel="stylesheet" href="./css/index.css">
    <link rel="stylesheet" href="./css/upgrades.css">
    <title>Clicker</title>
 </head>
 <body>
+   <mark>
+      <p>Ver. 1.0.0</p>
+      <p>&copy; All rights reserved &copy;</p>
+   </mark>  
+
    <header>
       <h1>Adventure Clicker</h1>
    </header>
 
    <main>
       <section class="click-cont">
-         <img src="./images/click.png" alt="Click here" id='clck-img'>
          <div class="inf-cont">
             <div class="cash-cont">
                <h3>Cash: $ </h3> <h3 id="cash"></h3>
@@ -30,62 +35,56 @@
                <div>
                   <h4>CPS: </h4> <h4 id="cps">12345</h4>
                </div>
+
+               <div>
+                  <h4>CRIT: </h4> <h4 id="crit">12345</h4>
+               </div>
             </section>
          </div>
+         <div class='img-cont'>
+            <img src="./images/click.png" alt="Click here" id='clck-img'>
+         </div>
+      </section>
+
+      <section class="INFO-CONT">
+         <!-- js info "popups" -->
       </section>
 
       <section class="upg-cont">
          <h2>UPGRADES</h2>
          <section> 
-            <article class="upg-item"> <!-- UPGRADE 1 -->
-               <h5>Upgrade name 1</h5>
-               <div class="it-cont">
-                  <div>
-                     <img src="https://i1.sndcdn.com/avatars-JTDPh6zcpZZXZ45P-JIWbOQ-t500x500.jpg" alt="upgImg">
-                  </div>
-
-                  <div>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                     <p class="desc">Increases CD by <span>1</span> </p>
-                     <div class="num-info">
-                        <h6 class="cost">Cost: $<span>100000000</span></h6>
-                        <h6 class="owned">Owned: <span>0</span></h6>
-                     </div>            
-                  </div>
-               </div>
-            </article>
-
-
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
-            <article class="upg-item">
-               xd
-            </article>
+            <!-- js -->
          </section>
       </section>
    </main>
 
    <footer>
-d
+      <div class='menu-icon'>
+         <span class='lines'></span>
+         <span class='lines'></span>
+         <span class='lines'></span>
+      </div>
+      <section>
+         <div>
+            <h1>CD & CPS</h1>
+            <p>Click damage: <span>213</span></p>
+            <p>Click Per Second <span>21322333</span></p>
+         </div>
+         <div>
+            <h1>Critical hits</h1>
+            <p>Chance: <span>213%</span></p>
+            <p>Damage <span>213%</span></p>
+         </div>
+         <div>
+            <h1>Money</h1>
+            <p>Current: <span>21444443132$</span></p>
+            <p>Total: <span>321132312312$</span></p>
+         </div>
+      </section>
+
+      <div class='boost-upg'> <!-- all boosts here -->
+         <img src="./images/closedChest.png" alt="chest" id='chest'>
+      </div>
    </footer>
 <script type="module" src="./js/index.js"></script>
 </body>

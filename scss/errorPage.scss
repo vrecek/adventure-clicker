@@ -1,0 +1,40 @@
+@import './config';
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+
+body{
+   background: url('https://images3.alphacoders.com/152/thumb-1920-152779.jpg');
+   height: 100vh;
+   @include flex-c-c;
+   flex-direction: column;
+
+   h1{
+      font-family: 'Satisfy', cursive;
+      font-size: 4rem;
+      text-shadow: 1px 1px 1px white;
+   }
+
+   p{
+      font-family: 'Sora', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color:rgb(0, 194, 228);
+      text-shadow: 1.5px 1.5px 1.5px black;
+   }
+}
+
+@media (max-width:480px) {
+   body{
+      h1{
+         font-size: clamp(2rem,14vw,4rem);
+      }
+      p{
+         font-size: clamp(.8rem,3vw,1.1rem);
+         text-align: center;
+      }
+   }
+}

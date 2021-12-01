@@ -25,6 +25,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+body mark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(48, 48, 48, 0.5);
+  text-align: right;
+  color: white;
 }
 
 body header {
@@ -55,6 +65,7 @@ body main {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.5em;
+  position: relative;
 }
 
 body main section {
@@ -63,6 +74,26 @@ body main section {
 
 body main section.click-cont {
   width: 33%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section.click-cont div.img-cont {
+  width: 100%;
+  height: 80%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,7 +106,19 @@ body main section.click-cont {
           align-items: center;
 }
 
-body main section.click-cont img {
+body main section.click-cont div.img-cont span {
+  position: absolute;
+  bottom: 5%;
+  color: #ff1100;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.2rem;
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  pointer-events: none;
+}
+
+body main section.click-cont div.img-cont img {
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -85,9 +128,6 @@ body main section.click-cont img {
 }
 
 body main section.click-cont div.inf-cont {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   border: 3px solid saddlebrown;
@@ -103,7 +143,7 @@ body main section.click-cont div.inf-cont .cash-cont {
 
 body main section.click-cont div.inf-cont .cash-cont h3 {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
   margin-bottom: .2em;
   font-weight: 600;
   text-transform: uppercase;
@@ -130,6 +170,7 @@ body main section.click-cont div.inf-cont section div {
 
 body main section.click-cont div.inf-cont section div h4 {
   text-align: center;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
 }
 
 body main section.click-cont div.inf-cont section div h4:nth-child(2) {
@@ -148,6 +189,7 @@ body main section.upg-cont h2 {
   text-align: center;
   font-family: 'Satisfy', cursive;
   text-shadow: 0 0 4px white;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 body main section.upg-cont section {
@@ -163,12 +205,183 @@ body main section.upg-cont section {
   overflow-y: scroll;
 }
 
+body main section.INFO-CONT {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  -webkit-transform: translate(-55%, -50%);
+          transform: translate(-55%, -50%);
+  width: 30%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+body main section.INFO-CONT div.chest-res {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid black;
+  border-radius: .3em;
+  width: 100%;
+  padding: 1em;
+  background: url("https://www.wallpaperuse.com/wallp/70-709660_m.jpg");
+  background-size: cover;
+}
+
 body footer {
   height: 18%;
   width: 100%;
   background: rgba(255, 255, 255, 0.4);
-  padding: 1.5em 2em;
+  padding: 1em 2em;
   border-top: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body footer section {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: -50%;
+  background: url("https://www.wallpaperuse.com/wallp/70-709660_m.jpg");
+  color: white;
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer section div {
+  height: 100%;
+}
+
+body footer section div h1 {
+  font-size: clamp(0.7rem, 3vw, 1rem);
+  border-bottom: 1px solid white;
+  margin-bottom: .5em;
+}
+
+body footer section div p {
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
+  margin-bottom: .2em;
+}
+
+body footer section div p span {
+  color: #00aeff;
+}
+
+body footer div.menu-icon {
+  position: absolute;
+  background: url("https://www.wallpaperuse.com/wallp/70-709660_m.jpg");
+  left: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  padding: .5em .5em;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 999;
+}
+
+body footer div.menu-icon span {
+  background: white;
+  width: 90%;
+  border: 1px solid white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body footer div.menu-icon span.lines {
+  position: absolute;
+  width: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body footer div.menu-icon span.lines:nth-child(1) {
+  top: 25%;
+  left: 50%;
+}
+
+body footer div.menu-icon span.lines:nth-child(2) {
+  top: 48%;
+  left: 50%;
+}
+
+body footer div.menu-icon span.lines:nth-child(3) {
+  top: 72%;
+  left: 50%;
+}
+
+body footer div.menu-icon span.cross {
+  position: absolute;
+  width: 70%;
+}
+
+body footer div.menu-icon span.cross:nth-child(1), body footer div.menu-icon span.cross:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+body footer div.menu-icon span.cross:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(225deg);
+          transform: translate(-50%, -50%) rotate(225deg);
+}
+
+body footer::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  left: 0;
   -webkit-box-shadow: 0 0 2px green, 0 0 4px green, 0 0 8px green;
           box-shadow: 0 0 2px green, 0 0 4px green, 0 0 8px green;
   -webkit-animation: glow 5s linear infinite;

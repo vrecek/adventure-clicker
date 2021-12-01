@@ -1,0 +1,55 @@
+footer .boost-upg {
+  width: 8%;
+  height: 100%;
+  z-index: 999;
+  position: relative;
+}
+
+footer .boost-upg .boostDesc {
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 0 2px #303030,0 0 4px #303030,0 0 8px #303030,0 0 12px #303030;
+          box-shadow: 0 0 2px #303030,0 0 4px #303030,0 0 8px #303030,0 0 12px #303030;
+  border-radius: .3em;
+  background: url("https://www.wallpaperuse.com/wallp/70-709660_m.jpg");
+  background-size: cover;
+  color: white;
+  position: absolute;
+  bottom: calc(100% + 1em);
+  left: 0;
+  width: 400px;
+  padding: 1em;
+  white-space: pre-line;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+footer .boost-upg .cdDiv {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: .3em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+footer .boost-upg img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

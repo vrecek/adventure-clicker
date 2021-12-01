@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://images3.alphacoders.com/152/thumb-1920-152779.jpg");
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px white;
+}
+
+body p {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #00c2e4;
+  text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+@media (max-width: 480px) {
+  body h1 {
+    font-size: clamp(2rem, 14vw, 4rem);
+  }
+  body p {
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+    text-align: center;
+  }
+}

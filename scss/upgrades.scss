@@ -12,6 +12,7 @@
       text-align: center;
       margin:.2em 0 1em 0;
       font-size: 1rem;
+      font-size: clamp(.7rem,1.1vw,1rem);
    }
 
    .it-cont{
@@ -22,11 +23,12 @@
       div{
          &:nth-child(1){
             width:35%;
+            height: 100%;
+            border:1px solid blue; border-width: 1px 1px 0 0;
    
             img{
                width:100%;
-               height:100%;
-               border:1px solid blue; border-width: 1px 1px 0 0;
+               height:100%;          
             }
          }
 
@@ -35,7 +37,7 @@
             position: relative;
 
             p{
-               font-size: .8rem;
+               font-size: clamp(.7rem,.8vw,.8rem);
                padding:0 .2em;
             
                &.desc{
