@@ -1,6 +1,10 @@
+console.log(1)
 import Statistics from './js/statistics.js';
 const s = new Statistics()
 console.log(s)
+const m = 995
+console.log(m)
+console.log(s.getCD)
 // import { BasicUpg, CdAndCps } from './js/upgrades.js';
 // import { Chest } from './js/Boost.js';
 // const maxWidth = 1200 - 1;
