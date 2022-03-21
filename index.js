@@ -1,5 +1,5 @@
 console.log('12')
-import Statistics from 'statistics.js';
+import Statistics from './js/statistics.js';
 const s = new Statistics()
 console.log(s)
 // import { BasicUpg, CdAndCps } from './upgrades.js';
