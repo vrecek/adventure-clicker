@@ -5,7 +5,9 @@ console.log(s)
 const m = 995
 console.log(m)
 console.log(s.getCD)
-// import { BasicUpg, CdAndCps } from './js/upgrades.js';
+import { BasicUpg, CdAndCps } from './js/upgrades.js';
+const bs = new BasicUpg('d', 's', 'src', 2, 2,2,2,2,'ts')
+console.log(bs)
 import { Chest } from './js/Boost.js';
 const ch = new Chest(document.body, 23, 23)
 console.log(ch)
