@@ -1,4 +1,4 @@
-import Statistics from '/js/Statistics.js';
+import Statistics from './statistics.js';
 export class Upgrades {
     title;
     desc;

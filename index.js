@@ -6,7 +6,9 @@ const m = 995
 console.log(m)
 console.log(s.getCD)
 // import { BasicUpg, CdAndCps } from './js/upgrades.js';
-// import { Chest } from './js/Boost.js';
+import { Chest } from './js/Boost.js';
+const ch = new Chest(document.body, 23, 23)
+console.log(ch)
 // const maxWidth = 1200 - 1;
 // const maxHeight = 602 - 1;
 // if (window.innerWidth <= maxWidth || window.innerHeight <= maxHeight) {
