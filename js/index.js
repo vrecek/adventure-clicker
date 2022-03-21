@@ -1,5 +1,5 @@
 console.log('12')
-// import Statistics from './statistics.js';
+import Statistics from 'statistics.js';
 // import { BasicUpg, CdAndCps } from './upgrades.js';
 // import { Chest } from './Boost.js';
 // const maxWidth = 1200 - 1;
