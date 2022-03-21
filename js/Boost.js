@@ -62,7 +62,7 @@ export class Chest extends Boost {
         if (!this.active)
             return;
         this.active = false;
-        this.item.src = '../images/openChest.png';
+        this.item.src = './images/openChest.png';
         let intervalName;
         let cd = this.cooldownSec / 1000;
         let parent = this.parent;
@@ -80,7 +80,7 @@ export class Chest extends Boost {
             clearInterval(intervalName); //
             this.active = true; //
             this.CDTIMER()[0].remove(); //
-            this.item.src = '../images/closedChest.png'; //
+            this.item.src = './images/closedChest.png'; //
         }, this.cooldownSec); //
         const action = this.action();
         return action;

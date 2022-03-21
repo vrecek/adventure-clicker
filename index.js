@@ -1,16 +1,6 @@
-// console.log(1)
 import Statistics from './js/statistics.js';
-// const s = new Statistics()
-// console.log(s)
-// const m = 995
-// console.log(m)
-// console.log(s.getCD)
 import { BasicUpg, CdAndCps } from './js/upgrades.js';
-// const bs = new BasicUpg('d', 's', 'src', 2, 2,2,2,2,'ts')
-// console.log(bs)
 import { Chest } from './js/Boost.js';
-// const ch = new Chest(document.body, 23, 23)
-// console.log(ch)
 const maxWidth = 1200 - 1;
 const maxHeight = 602 - 1;
 if (window.innerWidth <= maxWidth || window.innerHeight <= maxHeight) {
@@ -53,11 +43,11 @@ menu?.addEventListener('click', () => {
     toggled = !toggled;
 });
 const upgObj = [
-    new BasicUpg('Upgrade 1', 'Sharpen your old knife to gain some damage', '../images/upg1.png', 'Incerase your CD by ', 1, 50, 1.2, 1.1, 'CD'),
-    new BasicUpg('Upgrade 2', 'Force a peasant to fight on your side', '../images/upg2.png', 'Boost your CPS by ', 1, 500, 1.25, 1.6, 'CPS'),
-    new CdAndCps('Upgrade 3', 'Hire a mercenaries with different skills', '../images/upg4.png', 'Incerase your CPS by ', 3, 1000, 1.35, 1.5, 'CDCPS', 'and slightly CD by ', 1, 1.1),
+    new BasicUpg('Upgrade 1', 'Sharpen your old knife to gain some damage', './images/upg1.png', 'Incerase your CD by ', 1, 50, 1.2, 1.1, 'CD'),
+    new BasicUpg('Upgrade 2', 'Force a peasant to fight on your side', './images/upg2.png', 'Boost your CPS by ', 1, 500, 1.25, 1.6, 'CPS'),
+    new CdAndCps('Upgrade 3', 'Hire a mercenaries with different skills', './images/upg4.png', 'Incerase your CPS by ', 3, 1000, 1.35, 1.5, 'CDCPS', 'and slightly CD by ', 1, 1.1),
     new BasicUpg('Upgrade 4', 'Visit a blacksmith to enchant your weapon <i>(max 100%)</i>', '../images/upg3.png', 'Increase crit chance by ', 1, 2000, 1.4, 1, 'CRIT'),
-    new BasicUpg('Upgrade 5', "You've put your sword in magical fire source", '../images/upg5.png', 'Crit damage incerased by %', 1, 2500, 1.2, 1, 'CRITDMG')
+    new BasicUpg('Upgrade 5', "You've put your sword in magical fire source", './images/upg5.png', 'Crit damage incerased by %', 1, 2500, 1.2, 1, 'CRITDMG')
 ];
 // Add new bottom boosts here to obj and array
 const boosts = {
